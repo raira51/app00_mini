@@ -9,7 +9,7 @@
   /* 全体レイアウト */
 body {
   background: linear-gradient(to bottom, #fff3e0, #ffe0b2);
-  background-image:url('img/backimg2.jpg');
+  background-image:url('img/backimg.jpg');
   background-size: cover;
   font-family:"myfont";
 }
@@ -30,7 +30,7 @@ body {
 
 .container li{
   text-align: left;
-  letter-spacing:-0.25em;
+  letter-spacing:-0.23em;
 }
 
 .container p{
