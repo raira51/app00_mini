@@ -123,8 +123,24 @@ function showPopup(symbol) {
     message.textContent = "月が綺麗ですね。お月見しませんか？";
   }
   popup.classList.add("show"); // 表示
+
+
+// Xへのシェア機能
+
+const shareBtn = popup.querySelector("#shareButton");
+  if (shareBtn) {
+    shareBtn.onclick = () => shareOnX(currentLevel, symbol, message);
   }
 
+// X共有用関数
+function shareOnX(level, symbol, message) {
+const text = message.textContent;
+const tweetText = `【Lv${level}クリア】${symbol} ${text} #秋夜のスロット🎑`;
+const encodedText = encodeURIComponent(tweetText);
+const url = `https://twitter.com/intent/tweet?text=${encodedText}`;
+window.open(url, "_blank");
+}
+}
 function closePopup() {
   const popup = document.getElementById("popup");
   popup.classList.remove("show");

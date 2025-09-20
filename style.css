@@ -130,7 +130,7 @@ h1 {
   cursor: pointer;
   box-shadow: 0 5px 12px rgba(0,0,0,0.3);
   transition: transform 0.2s, background 0.3s;
-  font-family:"myfont"
+  font-family:"myfont";
 }
 
 .startButton:hover,.TopButton:hover{
@@ -180,6 +180,7 @@ h1 {
 .popup-content img {
   width: 120px;
   margin-bottom: 15px;
+  font-family:"myfont";
 }
 
 .popup-content button {
@@ -189,6 +190,7 @@ h1 {
   padding: 8px 16px;
   border-radius: 8px;
   cursor: pointer;
+  font-family:"myfont";
 }
 
 .popup-content button:hover {
