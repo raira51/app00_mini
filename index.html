@@ -4,62 +4,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Autumn Slot</title>
+  <title>秋夜のスロットマシン</title>
+  <meta name="description" content="スロットで秋を楽しもう！">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="秋夜のスロットマシン">
+  <meta name="twitter:description" content="スロットで秋を楽しもう！">
+  <meta name="twitter:image" content="https://raira51.github.io/app00_mini/img/ximg.png">
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="leaves.css">
 </head>
 <body>
 <div class="leaves-container">
   <h1>🍁秋夜のスロットマシン🍁</h1>
-<div class="container">
-    <!-- スロット部分 -->
-    <div class="slots">
-      <div class="slot-box">
-        <div id="slot1" class="slot">🐰</div>
-        
-        <button id="stopButton1" class="stopButton">月が綺麗ですね</button>
-      </div>
-      <div class="slot-box">
-        <div id="slot2" class="slot">🐰</div>
-        <button id="stopButton2" class="stopButton">月が綺麗ですね</button>
-      </div>
-      <div class="slot-box">
-        <div id="slot3" class="slot">🐰</div>
-        <button id="stopButton3" class="stopButton">月が綺麗ですね</button>
-    </div>
-  </div>
-    <h4>★ レベルを選んでね ★</h4>
-    <p id ="level-status"></p>
-  <div id="level-buttons">
-    <button data-level="1" class="levelbutton">レベル1</button>
-    <button data-level="2" class="levelbutton">レベル2</button>
-    <button data-level="3" class="levelbutton">レベル3</button>
-  </div>
-    <p>※ 最初に何も選択しない場合はレベル1になります</p>
-    <p>※ 回転中にレベルの変更はできません</p>
-  </div>
-    <!-- スタートボタン -->  
-    <div class="controls">
-      <button id="startButton" class="startButton">スタート</button>
-    </div>
-
-    <!-- 結果表示 -->
-    <p id="result"></p>
-
-  <!-- ポップアップ -->
-  <div id="popup" class="hidden">
-    <div class="popup-content">
-      <img src="" alt="">
-      <p></p>
-
-      <button id="shareButton">Xで共有</button>
-      <button onclick="closePopup()">閉じる</button>
-      
-    </div>
+  <div class="container">
+  <h2>遊び方</h2>
+  <ul>
+    <li>スロットのレベルを選ぼう</li>
+    <li>スタートボタンを押してスロット開始しよう</li>
+    <li>月が綺麗ですねボタンを押して全てのスロットを止めよう（※ 意外と難しい）</li>
+    <li>3つのスロットの絵柄を揃えよう！</li>
+    <li>絵柄がそろうと秋のメッセージが表示されるよ</li>
+    <li>揃った絵柄によってメッセージが変わるよ</li>
+    <li>目が乾きます⚠ご注意ください</li>
+  </ul>
   </div>
 
-  <script src="slot.js"></script>
+  <div class="controls">
+      <button id="TopButton" class="TopButton">遊ぶ</button>
+
+  <script>
+  document.getElementById("TopButton").addEventListener("click", function() {
+    window.location.href = "slot.html"; // ページ遷移
+  });
+  </script>
   <script src="leaves.js"></script>
+    </div>
   </div>
 </body>
 </html>

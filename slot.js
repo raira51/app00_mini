@@ -12,7 +12,7 @@ document.querySelectorAll("#level-buttons button").forEach(button => {
   button.addEventListener("click", (e) => {
     currentLevel = parseInt(e.target.getAttribute("data-level"));
     document.getElementById('result').textContent = "レベル " + currentLevel + " が選ばれました！";
-    document.getElementById('level-status').textContent = "＜＜ 現在レベル" + currentLevel + "を選択中です >>";
+    document.getElementById('level-status').textContent = "<< 現在レベル" + currentLevel + "を選択中です >>";
   });
 });
 
@@ -135,7 +135,8 @@ const shareBtn = popup.querySelector("#shareButton");
 // X共有用関数
 function shareOnX(level, symbol, message) {
 const text = message.textContent;
-const tweetText = `【Lv${level}クリア】${symbol} ${text} #秋夜のスロット🎑`;
+const appURL = "https://raira51.github.io/app00_mini/";
+const tweetText = `【Lv${level}クリア】${symbol} ${text} \n ${appURL}`;
 const encodedText = encodeURIComponent(tweetText);
 const url = `https://twitter.com/intent/tweet?text=${encodedText}`;
 window.open(url, "_blank");
