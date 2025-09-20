@@ -1,0 +1,54 @@
+.leaves-container {
+  position: relative;
+  z-index: 10;
+  height: 100vh; 
+  width: 100%; 
+  overflow: hidden; 
+}
+
+/* 落ち葉の共通スタイル */
+.leaf {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  animation: animate-leaf 8s linear;
+}
+
+/* 落ち葉1 */
+.leaf-1 {
+  background-image: url('img/red_ochiba.png'); 
+}
+
+/* 落ち葉2 */
+.leaf-2 {
+  background-image: url('img/yellow_ochiba.png'); 
+}
+
+/* 落ち葉3 */
+.leaf-3 {
+  background-image: url('img/orange_ochiba.png'); 
+}
+
+/* 落ち葉が降るアニメーション */
+@keyframes animate-leaf {
+  0% {
+    opacity: 0;
+    top: 0;
+    transform: rotate(0);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    top: 100vh;
+    transform: rotate(1080deg);
+  }
+}
