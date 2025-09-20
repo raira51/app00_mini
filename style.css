@@ -99,7 +99,9 @@ h1 {
   background: linear-gradient(to bottom, #fdd835, #f57f17);
   color: #fff;
   border: none;
-  border-radius: 30px;
+  border-radius: 10px;
+  padding: 8px 15px;
+  font-size: 15px;
   font-weight: bold;
   cursor: pointer;
   box-shadow: 0 5px 12px rgba(0,0,0,0.3);
